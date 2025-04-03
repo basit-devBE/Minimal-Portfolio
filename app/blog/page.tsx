@@ -29,9 +29,6 @@ export default async function BlogPage() {
             <Link href="/blog" className="bg-zinc-900 px-3 py-1 rounded-md text-sm">
               Blog
             </Link>
-            {/* <Link href="/courses" className="text-zinc-400 hover:text-white text-sm">
-              Courses
-            </Link> */}
             <Link href="/about" className="text-zinc-400 hover:text-white text-sm">
               About
             </Link>
@@ -60,34 +57,44 @@ export default async function BlogPage() {
           </div>
         </header>
 
-        {/* Blog Content */}
-        <header className="mb-12">
-          <Link href="/" className="text-zinc-400 hover:text-white inline-flex items-center mb-8">
-            <ArrowLeft className="h-4 w-4 mr-2" />
-            Back to home
-          </Link>
-          <h1 className="text-3xl font-bold mb-4">Blog</h1>
-          <p className="text-zinc-400">Thoughts, ideas, and tutorials on code, design, and creativity.</p>
-        </header>
+        {/* Blog Intro Section */}
+        <div className="max-w-2xl mx-auto mb-12">
+          <h1 className="text-2xl font-medium mb-8">Blog</h1>
+          
+          {/* Introduction paragraph - similar to the second image */}
+          <p className="text-zinc-400 mb-8">
+          I don't write with the expectation that what I say will immediately make an impact on you. Instead, I write with the understanding that many of the ideas and thoughts 
+          we hold are often not entirely our own but rather the result 
+          of seeds planted by countless people we've encountered and the experiences we've lived through—so many of which we've long forgotten the origins of.
+           My writings, then, are simply another manifestation of these ideas, passing along what has been absorbed over time, like an echo of the influences and lessons we've encountered along the way.
+          </p>
+          
+          <p className="text-zinc-400 mb-16">
+          These words are my own, shaped by the unique experiences I've lived through. If you come across something that feels unclear, incorrect, or misleading, I invite you to let me know so I can improve. 
+          And if you find anything that resonates or proves helpful, I'd be grateful if you shared it with your friends.
+          </p>
+          
+          {/* Post counter */}
+          <div className="text-sm text-zinc-500 mb-8">{posts.length} posts published</div>
+        </div>
 
+        {/* Blog Posts */}
         {posts.length > 0 ? (
-          <div className="space-y-8">
+          <div className="max-w-2xl mx-auto">
             {posts.map((post) => (
-              <article key={post.slug} className="border-b border-zinc-800 pb-8">
-                <Link href={`/blog/${post.slug}`} className="block group">
-                  <div className="mb-2">
-                    <time dateTime={post.date} className="text-xs text-zinc-500">
-                      {formatDate(post.date)}
-                    </time>
-                  </div>
-                  <h2 className="text-xl font-semibold mb-2 group-hover:text-yellow-500">{post.title}</h2>
-                  <p className="text-zinc-400 text-sm mb-4">{post.description}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {post.tags.map((tag) => (
-                      <span key={tag} className="text-xs text-zinc-500">#{tag}</span>
-                    ))}
-                  </div>
+              <article key={post.slug} className="flex justify-between items-start border-t border-zinc-800 py-6 group">
+                <Link href={`/blog/${post.slug}`} className="flex-1">
+                  <h2 className="text-base font-normal group-hover:text-yellow-500">{post.title}</h2>
+                  {post.tags && post.tags.includes("time-capsule") && (
+                    <span className="inline-block text-xs bg-zinc-800 text-zinc-400 px-2 py-0.5 rounded mt-1">time-capsule</span>
+                  )}
+                  {post.tags && post.tags.includes("disappointed") && (
+                    <span className="inline-block text-xs bg-zinc-800 text-zinc-400 px-2 py-0.5 rounded mt-1">disappointed</span>
+                  )}
                 </Link>
+                <time dateTime={post.date} className="text-sm text-zinc-500 ml-4 mt-1">
+                  {formatDate(post.date)}
+                </time>
               </article>
             ))}
           </div>
