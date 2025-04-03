@@ -3,6 +3,7 @@ import { Github, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import Head from "next/head"
+import Image from "next/image"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function Home() {
@@ -76,11 +77,18 @@ export default function Home() {
           </p>
         </section>
 
-        {/* Logo Circle */}
-        <div className="flex justify-center mb-16">
-          <div className="h-24 w-24 rounded-full border border-zinc-800 flex items-center justify-center">
-            <div className="h-12 w-12 rounded-full bg-zinc-900 flex items-center justify-center">
-              <span className="text-yellow-500 font-bold">Basit</span>
+       {/* Pixel Art Avatar Image */}
+       <div className="flex justify-center mb-16">
+          <div className="relative">
+            <div className="absolute inset-0 bg-blue-500/20 rounded-lg blur-xl"></div>
+            <div className="relative bg-blue-600/30 p-1 rounded-lg border border-blue-400/30">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-rGVowYAl6koEfz5gk2DKbiCgRNLKli.png"
+                alt="Pixel art avatar"
+                width={120}
+                height={120}
+                className="rounded block"
+              />
             </div>
           </div>
         </div>
