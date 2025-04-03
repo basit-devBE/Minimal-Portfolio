@@ -69,10 +69,10 @@ export default function Home() {
             <Link href="/projects" className="text-orange-500 hover:underline">
               stuff I&apos;m working on
             </Link>
-            . If you want to know more and keep up, try following my socials or join my{" "}
-            <Link href="#" className="text-indigo-400 hover:underline">
+            . If you want to know more and keep up
+            {/* <Link href="#" className="text-indigo-400 hover:underline">
               Discord
-            </Link>{" "}
+            </Link>{" "} */}
             server.
           </p>
         </section>
