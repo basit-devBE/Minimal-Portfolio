@@ -29,9 +29,9 @@ export default async function BlogPage() {
             <Link href="/blog" className="bg-zinc-900 px-3 py-1 rounded-md text-sm">
               Blog
             </Link>
-            <Link href="/courses" className="text-zinc-400 hover:text-white text-sm">
+            {/* <Link href="/courses" className="text-zinc-400 hover:text-white text-sm">
               Courses
-            </Link>
+            </Link> */}
             <Link href="/about" className="text-zinc-400 hover:text-white text-sm">
               About
             </Link>

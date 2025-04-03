@@ -21,10 +21,10 @@ interface BlogPost {
 }
 
 export default async function BlogPostPage({ params }: { params: { slug: string } }) {
-  const post = (await getPostBySlug(params.slug)) as BlogPost;
+  const post = await getPostBySlug(params.slug);
 
   if (!post) {
-    return <div>Post not found</div>
+    return <div>Post not found</div>;
   }
 
   return (

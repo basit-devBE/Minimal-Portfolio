@@ -27,9 +27,9 @@ export default function Home() {
             <Link href="/blog" className="text-zinc-400 hover:text-white text-sm">
               Blog
             </Link>
-            <Link href="/courses" className="text-zinc-400 hover:text-white text-sm">
+            {/* <Link href="/courses" className="text-zinc-400 hover:text-white text-sm">
               Courses
-            </Link>
+            </Link> */}
             <Link href="/about" className="text-zinc-400 hover:text-white text-sm">
               About
             </Link>
@@ -38,12 +38,13 @@ export default function Home() {
             <Button variant="ghost" size="icon" className="text-zinc-400 hover:text-white">
               <Mail className="h-5 w-5" />
             </Button>
-            <Button variant="ghost" size="icon" className="text-zinc-400 hover:text-white">
-              <Github className="h-5 w-5" />
-            </Button>
+            <a href="https://www.github.com/basit-devBE" target="_blank" rel="noopener noreferrer">
+               <Button variant="ghost" size="icon" className="text-zinc-400 hover:text-white">
+                 <Github className="h-5 w-5" />
+                </Button>
+            </a>
           </div>
         </header>
-
         {/* Introduction */}
         <section className="mb-20">
           <div className="mb-2">
@@ -117,8 +118,8 @@ export default function Home() {
       </p>
     </CardContent>
     <CardFooter className="pt-4 border-t border-zinc-800 text-xs">
-      <Link href="#" className="text-zinc-500 hover:text-white">
-        github.com/basit/cloudops-toolkit
+      <Link href="/blog/cloudopstoolkit" className="text-zinc-500 hover:text-white">
+      Cloud Ops Toolkit
       </Link>
     </CardFooter>
   </Card>
@@ -137,8 +138,8 @@ export default function Home() {
       </p>
     </CardContent>
     <CardFooter className="pt-4 border-t border-zinc-800 text-xs">
-      <Link href="#" className="text-zinc-500 hover:text-white">
-        basit.dev/blog
+      <Link href="/blog/blog" className="text-zinc-500 hover:text-white">
+        /blog
       </Link>
     </CardFooter>
   </Card>

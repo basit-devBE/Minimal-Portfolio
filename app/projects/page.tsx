@@ -30,9 +30,9 @@ export default async function ProjectsPage() {
               <Link href="/blog" className="text-zinc-400 hover:text-white text-sm">
                 Blog
               </Link>
-              <Link href="/courses" className="text-zinc-400 hover:text-white text-sm">
+              {/* <Link href="/courses" className="text-zinc-400 hover:text-white text-sm">
               Courses
-              </Link>
+              </Link> */}
               <Link href="/about" className="text-zinc-400 hover:text-white text-sm">
                 About
               </Link>
