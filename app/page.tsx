@@ -2,10 +2,12 @@ import Link from "next/link"
 import { Github, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
+import Head from "next/head"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function Home() {
   return (
+    <>
     <div className="min-h-screen bg-black text-white">
       <div className="container mx-auto px-4 py-8">
         {/* Logo and Navigation */}
@@ -151,8 +153,8 @@ export default function Home() {
         <div className="mt-20 py-6 border-t border-zinc-900 text-center">
          
         </div>
+        </div>
       </div>
-    </div>
+    </>
   )
 }
-
