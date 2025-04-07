@@ -50,10 +50,11 @@ export default async function BlogPage() {
                 <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
               </svg>
             </Button>
-            <Button variant="ghost" size="icon" className="text-zinc-400 hover:text-white">
-              <span className="sr-only">GitHub</span>
-              <Github className="h-5 w-5" />
-            </Button>
+            <a href="https://www.github.com/basit-devBE" target="_blank" rel="noopener noreferrer">
+               <Button variant="ghost" size="icon" className="text-zinc-400 hover:text-white">
+                 <Github className="h-5 w-5" />
+                </Button>
+            </a>
           </div>
         </header>
 
