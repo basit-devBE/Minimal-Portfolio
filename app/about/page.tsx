@@ -69,7 +69,7 @@ export default function AboutPage() {
                 <p className="text-xs">Next.js x Vercel</p>
                 <p className="text-xs">
                   Source code: {" "}
-                  <a href="https://github.com/basit/portfolio" className="hover:text-white">
+                  <a href="https://github.com/basit-devBE/Minimal-Portfolio" className="hover:text-white">
                     github.com/basit/portfolio
                   </a>
                 </p>
