@@ -181,4 +181,4 @@ Pushing both `latest` and `${{ github.sha }}` gives me a fast default and a prec
 - Parameterize `BACKEND_API_HOST` per environment (dev/stage/prod)
 - Add a quick smoke test step post-deploy
 
-## This was a project to learn CI/CD basics with Docker, GitHub Actions, and AWS ECR. It’s a simple setup but covers the core concepts of building, pushing, and deploying containerized apps. From here, I hope iterate and improve as I learn more about DevOps best practices.
+## This was a project to learn CI/CD basics with Docker, GitHub Actions, and AWS ECR. It’s a simple setup but covers the core concepts of building, pushing, and deploying containerized apps. From here, I hope to iterate and improve as I learn more about DevOps best practices.
