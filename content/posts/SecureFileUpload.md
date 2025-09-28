@@ -437,4 +437,8 @@ Key dependencies include AWS SDK v3 for modern async/await support, Express.js f
 This system proves that you can build something robust without sacrificing developer experience or operational simplicity. The AWS services handle the heavy lifting, the code focuses on business logic, and the result is a file upload system that actually works in production.
 
 
-## Link to the repo[GitHub Repository](`https://github.com/basit-devBE/Secure-FIle-Upload`)
+## GitHub Repository
+
+You can find the complete source code for this secure file upload system on GitHub:
+
+[**Secure File Upload System**](https://github.com/basit-devBE/Secure-FIle-Upload)
