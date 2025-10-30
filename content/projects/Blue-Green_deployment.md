@@ -203,7 +203,7 @@ Time: 2025-10-30 15:23:35
 Action Required: Check application logs and service health
 ```
 
-![High Error Rate Alert](./screenshots/High_Error_Alert.jpeg)
+![High Error Rate Alert](/screenshots/High_Error_Alert.jpeg)
 
 **Pool Failover Alert**:
 ```
@@ -214,7 +214,7 @@ Time: 2025-10-30 15:26:37
 Action Required: Investigate why primary pool failed
 ```
 
-![Pool Failover Alert](./screenshots/Failover_Alert.jpeg)
+![Pool Failover Alert](/screenshots/Failover_Alert.jpeg)
 
 The alerting includes a cooldown mechanism to prevent alert flooding. Once an alert fires, it will not fire again for a configurable period (default 300 seconds), even if the condition persists.
 
