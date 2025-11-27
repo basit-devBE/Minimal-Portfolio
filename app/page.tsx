@@ -57,8 +57,8 @@ export default function Home() {
             <p className="text-zinc-500 text-sm mt-1">いらっしゃいませ</p>
           </div>
           <h1 className="text-3xl font-bold mb-4">
-          It's me, Basit<span className="text-yellow-500">.</span> I'm a software engineer and Computer Science student exploring everything that sparks my interest—backend development,
-           cloud computing, Devops and Cloud and System architecture.
+          It's me, Basit<span className="text-yellow-500">.</span> I'm a software engineer and Computer Science graduate exploring everything that sparks my interest—backend development,
+           cloud computing,Distributed Systems,Devops and Cloud and System architecture.
           </h1>
           <p className="text-zinc-400 mb-4">
             On this site, you&apos;ll find a few things I want you to know{" "}
