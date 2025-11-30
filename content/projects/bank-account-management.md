@@ -36,9 +36,6 @@ Key features:
 
 The system uses a three-layer architecture adapted from MVC for console applications:
 
-## Architecture
-
-The system uses a three-layer architecture adapted from MVC for console applications:
 
 ### Models layer (com/bank/models/)
 
