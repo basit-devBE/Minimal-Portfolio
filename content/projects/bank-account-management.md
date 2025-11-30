@@ -10,7 +10,7 @@ github: "https://github.com/basit-devBE/Bank-Account-Management-System"
 
 I wrote a console-based banking application to understand OOP principles and separation of concerns at a practical level. The system handles account creation, transaction processing, and role-based access control using a layered architecture that separates models, controllers, and repositories.
 
-Having come from an [SRC Architecture pattern](blog/SRC), I knew to separate application concerns even though this was a small console application.
+Having come from an [SRC Architecture pattern](https://www.basit.my/blog/SRC), I knew to separate application concerns even though this was a small console application.
 
 ## What it does
 
