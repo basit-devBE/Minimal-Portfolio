@@ -63,7 +63,7 @@ export default function AboutPage() {
         <footer className="max-w-2xl mx-auto mt-24 pt-8 border-t border-zinc-800 text-zinc-500 text-sm">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
             <div>
-              <p>© 2025 Basit. All rights reserved.</p>
+              <p>© 2026 Basit. All rights reserved.</p>
               <div className="flex flex-col md:flex-row gap-1 md:gap-4">
                 <p className="text-xs">version <span className="text-emerald-500">1.0.0</span></p>
                 <p className="text-xs">Next.js x Vercel</p>
